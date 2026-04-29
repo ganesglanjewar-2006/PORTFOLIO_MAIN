@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
 // MongoDB Connection
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI || "mongodb+srv://lanjewarganesh876_db_user:%40marotiganesh%40@portfolio.tlboeyn.mongodb.net/?appName=portfolio";
+const MONGO_URI = process.env.MONGO_URI;
 
 mongoose.connect(MONGO_URI)
   .then(() => {
