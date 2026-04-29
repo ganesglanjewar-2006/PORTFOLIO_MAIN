@@ -1,3 +1,5 @@
+export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://portfolio-main-f7jw.onrender.com";
+
 export const portfolioData = {
   name: "Ganesh Lanjewar",
   headline: "Full Stack Developer & DevOps Enthusiast",
