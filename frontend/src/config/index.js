@@ -4,6 +4,7 @@ export const portfolioData = {
   location: "Pune, India",
   status: "Open to Internship & Full-Time Opportunities",
   achievements: ["🏆 Impetus 2025 Winner"],
+  bio: "Full Stack Developer specializing in the MERN stack, building scalable and responsive web applications.",
   about: `I am a Full Stack Developer specializing in the MERN stack, with hands-on experience in building scalable and responsive web applications using React.js, Node.js, Express, and MongoDB.
 
 I also work with Next.js to develop fast and modern web applications. Along with development, I have strong problem-solving skills in Java and Data Structures & Algorithms.
@@ -14,7 +15,7 @@ I enjoy building real-world projects, solving challenging problems, and continuo
   linkedin: "https://www.linkedin.com/in/ganesh-lanjewar-a93a023b3",
   profileImage: "/image.png",
   skills: [
-    "Java", "Data Structures & Algorithms", "React", "Next.js", "Node.js", "Express", "MongoDB", "Redux", "WebRTC", "Docker", "AWS", "Redis", "Socket.io", "Git"
+    "Java", "Data Structures & Algorithms", "React", "Next.js", "Node.js", "Express", "MongoDB", "MySQL", "Redux", "WebRTC", "Docker", "AWS", "Socket.io", "Git"
   ],
   projects: [
     {
@@ -39,7 +40,7 @@ I enjoy building real-world projects, solving challenging problems, and continuo
       id: "deploynova",
       name: "DeployNova",
       description: "An automated DevOps tool designed to simplify deployment pipelines and infrastructure management.",
-      tech: ["React", "Docker", "AWS", "Redis", "Shell Scripting"],
+      tech: ["React", "Docker", "AWS", "Shell Scripting"],
       demo: "https://deploynova-client.onrender.com/",
       github: "https://github.com/ganesglanjewar-2006/DEPLOYNOVA",
       howToUse: "Upload your configuration, select your target environment, and let DeployNova handle the scaling and deployment logic."
@@ -57,16 +58,24 @@ I enjoy building real-world projects, solving challenging problems, and continuo
   achievements: [
     {
       title: "🏆 Impetus 2025 Winner",
-      description: "Secured 1st place for developing an IoT-based Smart Dustbin. The project utilized Arduino, Ultrasonic sensors, Moisture sensors, and Odour sensors for intelligent waste segregation and monitoring.",
+      description: "Secured 1st place out of numerous entries for developing an innovative IoT-based Smart Dustbin. The project tackled modern urban waste management challenges by implementing intelligent waste segregation and real-time fill-level monitoring. Built using Arduino microcontrollers and a specialized network of Ultrasonic, Moisture, and Odour sensors, the system automatically categorizes waste and alerts sanitation workers when bins reach capacity, demonstrating a highly practical application of IoT for sustainable, smart-city infrastructure.",
       year: "2025"
     }
   ],
   education: [
     {
-      institution: "RTMNU (Rashtrasant Tukadoji Maharaj Nagpur University)",
+      institution: "VIT Pune (Vishwakarma Institute of Technology)",
       degree: "Bachelor of Technology",
-      field: "Computer Science",
-      duration: "2023 - 2027"
+      field: "Artificial Intelligence and Data Science (AIDS)",
+      duration: "2024 - 2028",
+      score: "8.97 CGPA"
+    },
+    {
+      institution: "Maharishi Vidya Mandir",
+      degree: "10th Grade",
+      field: "",
+      duration: "Completed",
+      score: "94%"
     }
   ]
 };

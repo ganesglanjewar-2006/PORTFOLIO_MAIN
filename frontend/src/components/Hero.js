@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin, Download } from 'lucide-react';
 
 const Hero = ({ data }) => {
   return (
@@ -34,6 +34,19 @@ const Hero = ({ data }) => {
             </h1>
             
             <p className="bio">{data.bio}</p>
+            
+            <div className="hero-actions">
+              <motion.a 
+                href="/resume.pdf" 
+                target="_blank"
+                download="Ganesh_Lanjewar_Resume.pdf"
+                className="btn btn-primary"
+                whileHover={{ y: -5, scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <Download size={20} /> Download Resume
+              </motion.a>
+            </div>
             
             <div className="hero-meta">
               <div className="meta-item">
@@ -123,9 +136,40 @@ const Hero = ({ data }) => {
           font-size: 1.4rem;
           color: #94A3B8;
           line-height: 1.6;
-          margin-bottom: 4rem;
+          margin-bottom: 3rem;
           max-width: 650px;
           font-weight: 500;
+        }
+
+        .hero-actions {
+          display: flex;
+          gap: 1.5rem;
+          margin-bottom: 4rem;
+        }
+
+        .btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          padding: 1rem 2.5rem;
+          border-radius: 12px;
+          font-weight: 900;
+          font-size: 1rem;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+          background: #FFFFFF;
+          color: #020617;
+          border: 2px solid #E2E8F0;
+        }
+
+        .btn-secondary {
+          background: rgba(255, 255, 255, 0.05);
+          color: #FFFFFF;
+          border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .hero-meta {
@@ -209,10 +253,10 @@ const Hero = ({ data }) => {
             gap: 5rem;
           }
           .hero-text { margin: 0 auto; }
-          .hero-meta, .social-links { justify-content: center; }
+          .hero-actions, .hero-meta, .social-links { justify-content: center; }
           .name { font-size: 4rem; }
           .hero-image-area { justify-content: center; }
-          .image-frame { width: 320px; height: 420px; }
+          .image-frame { width: 320px; height: 420px; transform: none; }
         }
       `}</style>
     </section>
